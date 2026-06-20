@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FRA Binary Kings</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#050505;
+overflow:hidden;
+color:#fff;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+/* floating particles */
+.bg span{
+position:absolute;
+width:4px;
+height:4px;
+background:#00ff99;
+border-radius:50%;
+animation:move 12s linear infinite;
+}
+
+@keyframes move{
+0%{
+transform:translateY(100vh) scale(0);
+opacity:0;
+}
+20%{
+opacity:1;
+}
+100%{
+transform:translateY(-100vh) scale(2);
+opacity:0;
+}
+}
+
+/* card design */
+.card{
+width:90%;
+max-width:420px;
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,.1);
+border-radius:25px;
+padding:30px;
+text-align:center;
+box-shadow:0 0 35px #00ff99;
+}
+
+/* logo image */
+.logo img{
+width:120px;
+height:120px;
+object-fit:contain;
+animation:float 2s infinite;
+}
+
+/* floating animation */
+@keyframes float{
+50%{transform:translateY(-10px);}
+}
+
+h1{
+color:#00ff99;
+margin:15px 0;
+}
+
+p{
+font-size:18px;
+line-height:32px;
+color:#ddd;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:18px 40px;
+background:#229ED9;
+color:#fff;
+text-decoration:none;
+font-size:22px;
+font-weight:bold;
+border-radius:60px;
+box-shadow:0 0 25px #229ED9;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.08);
+box-shadow:0 0 45px #229ED9;
+}
+
+.footer{
+margin-top:25px;
+font-size:15px;
+color:#aaa;
+}
+</style>
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<div class="card">
+
+<!-- sjekvtlz5p3uiqi1c6ds.GIF -->
+<div class="content://media/external/downloads/1000082738">
+  <img src="content://media/external/downloads/1000082738" alt="FRA Binary Kings Logo">
+</div>
+
+<h1>FRA Binary Kings</h1>
+
+<p>
+🚀 বাংলাদেশের অন্যতম সেরা Binary Trading Community<br><br>
+
+💚 প্রতিদিন Sure Shot Signal<br>
+📈 Live Trading Session<br>
+🔥 High Accuracy Analysis<br>
+💸 Money Management Tips
+</p>
+
+<a class="btn" href="https://t.me/frabinarykings" target="_blank">
+📲 JOIN TELEGRAM
+</a>
+
+<div class="footer">
+🔥 Join Now & Start Earning Today 🔥
+</div>
+
+</div>
+
+<script>
+for(let i=0;i<80;i++){
+let s=document.createElement("span");
+s.style.left=Math.random()*100+"%";
+s.style.animationDuration=(5+Math.random()*8)+"s";
+s.style.animationDelay=Math.random()*5+"s";
+document.querySelector(".bg").appendChild(s);
+}
+</script>
+
+</body>
+</html>
